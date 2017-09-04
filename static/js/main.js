@@ -640,6 +640,7 @@ $('.history__years').slick({
     infinite: false,
     draggable: false
 });
+"use strict";
 'use strict';
 
 $(function () {
@@ -682,7 +683,6 @@ $(function () {
 "use strict";
 "use strict";
 "use strict";
-"use strict";
 'use strict';
 
 $('.slider__content').slick({
@@ -701,6 +701,7 @@ $('.slider__content').slick({
         }
     }]
 });
+"use strict";
 "use strict";
 'use strict';
 
