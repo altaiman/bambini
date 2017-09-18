@@ -588,7 +588,15 @@ $(function () {
         };
     });
 });
-"use strict";
+'use strict';
+
+$(function () {
+    $('.gymn__video').on('click', function () {
+        $('.gymn__preview').fadeOut(500);
+        $('.gymn__title').hide();
+        $('.gymn__video iframe')[0].src += "?autoplay=1";
+    });
+});
 'use strict';
 
 $('.header__link_question').click(function (e) {
@@ -683,6 +691,22 @@ $(function () {
 "use strict";
 "use strict";
 "use strict";
+"use strict";
+"use strict";
+'use strict';
+
+$(function () {
+    function checked() {
+        $('.timetable__tab-content').hide();
+        $('.timetable__tab-content[data-content="' + $('.tab.checked').find('input').val() + '"]').show();
+    }
+    $('.tab').click(function () {
+        $('.tab.checked').removeClass('checked');
+        $(this).addClass('checked');
+        checked();
+    });
+    checked();
+});
 'use strict';
 
 $('.slider__content').slick({
@@ -700,21 +724,5 @@ $('.slider__content').slick({
             slidesToShow: 1
         }
     }]
-});
-"use strict";
-"use strict";
-'use strict';
-
-$(function () {
-    function checked() {
-        $('.timetable__tab-content').hide();
-        $('.timetable__tab-content[data-content="' + $('.tab.checked').find('input').val() + '"]').show();
-    }
-    $('.tab').click(function () {
-        $('.tab.checked').removeClass('checked');
-        $(this).addClass('checked');
-        checked();
-    });
-    checked();
 });
 "use strict";
